@@ -1,0 +1,52 @@
+- title: A new beginning
+  items:
+    - id: getting-started
+      title: Getting Started
+    - id: resources
+      title: Resources
+    - id: setup-your-project
+      title: Setup your Project
+- title: Backend Concepts
+  isOrdered: true
+  items:
+    - id: loading-the-api
+      title: Loading the API
+    - id: graphql-basics
+      title: The GraphQL Basics
+    - id: database
+      title: Database Concepts
+    - id: services
+      title: Services
+    - id: accounts
+      title: Authentication & Authorization
+    - id: settings
+      title: Settings
+    - id: deployment-and-apm
+      title: Deployment & APM
+- title: Frontend Concepts
+  isOrdered: true
+  items:
+    - id: frontend-basics
+      title: Basics
+    - id: frontend-styling
+      title: Styling
+    - id: frontend-forms
+      title: Forms
+    - id: frontend-state-management
+      title: State Management
+- title: Guides
+  items:
+    - id: event-driven-system
+      title: Event-Driven System
+    - id: live-data
+      title: Live Data
+    - id: emails
+      title: Handling Emails
+    - id: testing
+      title: Testing & CI
+    - id: securing-graphql
+      title: Securing GraphQL
+    # - id: uploads
+    #   title: Uploads
+    - id: server-side-rendering
+      title: Server Side Rendering
