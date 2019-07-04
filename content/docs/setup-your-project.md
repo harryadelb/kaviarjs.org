@@ -116,7 +116,7 @@ meteor npm i --save-dev babel-plugin-module-resolver
 
 ### Initialising Flow
 
-Just create `.flowconfig` in the root of your project, that that's it. Use the configuration below. If you don't know what [Flow](https://flow.org/en/docs/lang/types-and-expressions/) is, [take a look here](https://flow.org/en/docs/lang/types-and-expressions/), and don't worry about it for now.
+Just create `.flowconfig` in the root of your project, that's it. Use the configuration below. If you don't know what [Flow](https://flow.org/en/docs/lang/types-and-expressions/) is, [take a look here](https://flow.org/en/docs/lang/types-and-expressions/), and don't worry about it for now.
 
 ```
 [options]

@@ -95,7 +95,7 @@ query {
 }
 ```
 
-So. You are starting to see some similarities between defining queries and actual types. That's because there's really no difference in defining it. It's just the main `Query` type is the one that gets interogated when you use `query` in the GraphQL request. Same logic applies to main `Mutation` type.
+So you see some similarities between defining queries and actual types. That's because there's really no difference in defining it. It's just the main `Query` type is the one that gets interrogated when you use `query` in the GraphQL request. Same logic applies to main `Mutation` type.
 
 ## Arguments & Variables
 

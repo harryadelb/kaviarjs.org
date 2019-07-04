@@ -31,7 +31,7 @@ process.env.MAIL_URL = Meteor.settings.MAIL_URL;
 ```
 
 We want emails to:
-- Be able to be found easily in a centralized place. It's very important they are not spread all over the app so we have control over them.
+- Be able to be found easily in a centralized place. It's very important that they are not spread all over the app so we have control over them.
 - Be able to have a nice layout for everyone of them
 - Be easy to develop and easy to maintain
 

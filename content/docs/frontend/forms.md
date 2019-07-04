@@ -8,7 +8,7 @@ For handling forms we recommend using: [Uniforms](https://vazco.github.io/unifor
 
 ---
 
-One of the reasons for choosing Uniforms is the fact that it blends with `SimpleSchema` the same schema we use on the backend
+One of the reasons for choosing Uniforms is the fact that it blends with `SimpleSchema`, the same schema we use on the backend
 for enforcing a collection's shape. 
 
 Another reason for it is that you have validation and form generation in one place, so when you're building your web app that needs to look professional enough but just get the job done, you'll setup your schema with propper validation, and generate the form based on your schema, then on the backend validate the data with the same schema.
