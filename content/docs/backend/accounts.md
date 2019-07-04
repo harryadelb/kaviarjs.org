@@ -4,7 +4,7 @@ title: Accounts
 permalink: docs/accounts.html
 ---
 
-In this article you'll learn how to quickly setup accounts, GraphQL types, Email strategies and, SSO and Security.
+In this article you'll learn how to quickly setup accounts, GraphQL types, Email strategies SSO and Security.
 
 ---
 

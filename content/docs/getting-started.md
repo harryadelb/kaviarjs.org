@@ -14,7 +14,7 @@ redirect_from:
 
 ## What will I learn?
 
-We will learn how to boild rock-solid backends (useable by mobile as well), beautiful well-structured frontends, everything in an organised fashion.
+We will learn how to build rock-solid backends (usable by mobile as well), beautiful well-structured frontends, everything in an organised fashion.
 
 This means we provide folder structure, development patterns, interesting tools you can use to accelerate your development time and quality, you will have the ability to design complex well-tested apps and implement them with ease by following Kaviar's conventions.
 
