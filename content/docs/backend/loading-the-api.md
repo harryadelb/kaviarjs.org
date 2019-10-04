@@ -26,7 +26,7 @@ load({
 initialize();
 ```
 
-`initialize()` must be called after everything has been loaded because it will work together with [graphql-load](https://www.npmjs.com/package/graphql-load) to extract the already loaded schema. If you `load()` stuff after initialise, they will have no effect. Take a look at the [package documentation](https://www.npmjs.com/package/graphql-load) to get a little bit familiar with the concepts then we'll explore how we use it in Kaviar.
+`initialize()` must be called after everything has been loaded because it will work together with [graphql-load](https://www.npmjs.com/package/graphql-load) to extract the already loaded schema. If you `load()` stuff after initialise, they will have no effect. Take a look at the [package documentation](https://www.npmjs.com/package/graphql-load) to get a little bit familiar with the concepts, then we'll explore how we use it in Kaviar.
 
 
 Even if we have just few lines, it already feels like we need to split things up, and have our api loaded in a separate file.

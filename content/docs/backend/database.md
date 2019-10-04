@@ -281,11 +281,11 @@ query {
 
 And relations not only are done automatically, [they are extremely performant](https://github.com/cult-of-coders/grapher/blob/master/docs/hypernova.md), and it will only interogate the database for the fields you need, not all fields.
 
-With few lines of code you have an imense amount of power. However, as your app grows, and you need database consistency and maybe other extensions. It's a good idea to move the database definitions and links outside the types (No more schema directives)
+With few lines of code you have an immense amount of power. However, as your app grows, and you need database consistency and maybe other extensions, it's a good idea to move the database definitions and links outside the types (No more schema directives)
 
 ## Reducers & Resolvers
 
-If you do have resolvers that are not used for relations and they need certain fields. Because Grapher is smart enough to only fetch the fields you need from the database. You could try this approach from [Grapher Reducers](https://github.com/cult-of-coders/grapher/blob/master/docs/reducers.md)
+If you do have resolvers that are not used for relations and they need certain fields, Grapher is smart enough to only fetch the fields you need from the database. You could try this approach from [Grapher Reducers](https://github.com/cult-of-coders/grapher/blob/master/docs/reducers.md)
 
 ```js
 Collection.addReducers({

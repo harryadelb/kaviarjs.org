@@ -4,7 +4,7 @@ title: Event Driven System
 permalink: docs/event-driven-system.html
 ---
 
-As your application grows, your logic grows, instead of explicitly calling logic from a single place, dispatch an event, and let other pieces of code handle that event.
+As your application grows, your logic grows, so, instead of explicitly calling logic from a single place, dispatch an event, and let other pieces of code handle that event.
 
 ---
 
@@ -53,10 +53,10 @@ createPostAndNotifyAdminsAndInterestedPeopleInSaleThenProcessCharging(data);
 
 ## The Solution
 
-Ok we can't work with something like that, name too long, and we break the single responsability principle.
+Ok we can't work with something like that, name too long, and we break the single responsibility principle.
 Is there any hope for us in this? Can we have good code when we have a lot of functionality?
 
-Ofcourse, let's rock and roll with the Observer pattern.
+Of course, let's rock and roll with the Observer pattern.
 In code translation:
 
 ```js
@@ -109,7 +109,7 @@ Emitter.on(Events.ITEM_CREATED, function({ itemId }) {
 What do we exactly gain by using this strategy ?
 
 - You can plug-in additional functionality by listening to events
-- If item creation is done from multiple places, if you want to remove/add functionality you do it in one place
+- If item creation is done from multiple places and you want to remove/add functionality you do it in one place
 - It's easy to find what listeners you have if you respect the pattern, simply searching for `Events.ITEM_CREATED` in your project finds you everything you need (listeners, emitters)
 - The code is independent and doesn't know about other functionality, which is the way it should be
 

@@ -42,7 +42,7 @@
       title: Live Data
     - id: emails
       title: Handling Emails
-    - id: testing
+    - id: testing-and-ci
       title: Testing & CI
     - id: securing-graphql
       title: Securing GraphQL

@@ -8,7 +8,7 @@ Testing is the art that the programmer learns in order to write the code faster,
 
 ---
 
-Some programmers think that writing tests is a waste of time, or they think that it slows you down, on the contrary. Whenever you are writing backend logic, it's much faster (after you get the hang of it) to write a backend test, rather than manually testing with your frontend, and especially when you're dealing with complex logic, there's no way your human mind can comprehend the deep implications that changing a simple `if` may have, we humans are limited, this is why we need testing. Case closed.
+Some programmers think that writing tests is a waste of time, or they think that it slows you down. On the contrary, whenever you are writing backend logic, it's much faster (after you get the hang of it) to write a backend test, rather than manually testing with your frontend, and especially when you're dealing with complex logic, there's no way your human mind can comprehend the deep implications that changing a simple `if` may have, we humans are limited, this is why we need testing. Case closed.
 
 We discussed in our [Services](/docs/services.html) chapter about injecting dependencies into our services to allow it to be nicely tested. Here we'll explore how to do exactly that.
 
@@ -55,7 +55,7 @@ describe('ItemService', function () {
 
 ### Viewing Test Results in UI
 
-Now let's run our tests, first let's add a script inside our `package.json`:
+Now to run our tests, let's first add a script inside our `package.json`:
 
 ```json
 {
