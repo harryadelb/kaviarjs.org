@@ -40,12 +40,14 @@ class Home extends Component {
   render() {
     const {babelLoaded} = this.state;
     const {data, location} = this.props;
-    const {codeExamples, examples, marketing} = data;
+    const {examples, marketing} = data;
 
-    const code = codeExamples.edges.reduce((lookup, {node}) => {
-      lookup[node.mdAbsolutePath] = node;
-      return lookup;
-    }, {});
+    const code = {};
+
+    // const code = codeExamples.edges.reduce((lookup, {node}) => {
+    //   lookup[node.mdAbsolutePath] = node;
+    //   return lookup;
+    // }, {});
 
     return (
       <Layout location={location}>
@@ -133,7 +135,7 @@ class Home extends Component {
                         fontSize: 30,
                       },
                     }}>
-                    Orchestrating the modern-web with NodeJS, React and GraphQL
+                    Orchestrating the modern-web with GraphQL & React
                   </p>
                   <Flex
                     valign="center"
@@ -152,8 +154,8 @@ class Home extends Component {
                       </ButtonLink>
                     </CtaItem>
                     <CtaItem>
-                      <ButtonLink to="/tutorial/tutorial.html" type="secondary">
-                        Take the Tutorial
+                      <ButtonLink to="/docs/getting-started.html" type="secondary">
+                        Start reading the docs
                       </ButtonLink>
                     </CtaItem>
                   </Flex>
@@ -258,15 +260,10 @@ class Home extends Component {
                   {examples.edges.map(({node}, index) => {
                     const snippet = code[node.fileAbsolutePath];
                     return (
-                      <CodeExample
-                        key={index}
-                        id={snippet.id}
-                        code={snippet.code}
-                        containerNodeID={node.frontmatter.domid}
-                        loaded={babelLoaded}>
+                      <>
                         <h3 css={headingStyles}>{node.frontmatter.title}</h3>
                         <div dangerouslySetInnerHTML={{__html: node.html}} />
-                      </CodeExample>
+                      </>
                     );
                   })}
                 </div>
@@ -288,11 +285,11 @@ class Home extends Component {
                     Get Started
                   </ButtonLink>
                 </CtaItem>
-                <CtaItem>
+                {/* <CtaItem>
                   <ButtonLink to="/tutorial/tutorial.html" type="secondary">
                     Take the Tutorial
                   </ButtonLink>
-                </CtaItem>
+                </CtaItem> */}
               </Flex>
             </Container>
           </section>
@@ -304,7 +301,7 @@ class Home extends Component {
 
 Home.propTypes = {
   data: PropTypes.shape({
-    examples: PropTypes.object.isRequired,
+    examples: PropTypes.object,
     marketing: PropTypes.object.isRequired,
   }).isRequired,
 };
@@ -339,15 +336,15 @@ const CtaItem = ({children, primary = false}) => (
 
 export const pageQuery = graphql`
   query IndexMarkdown {
-    codeExamples: allExampleCode {
-      edges {
-        node {
-          id
-          code
-          mdAbsolutePath
-        }
-      }
-    }
+    # codeExamples: allExampleCode {
+    #   edges {
+    #     node {
+    #       id
+    #       code
+    #       mdAbsolutePath
+    #     }
+    #   }
+    # }
 
     examples: allMarkdownRemark(
       filter: {fileAbsolutePath: {regex: "//home/examples//"}}

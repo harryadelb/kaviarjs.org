@@ -25,10 +25,18 @@ It's a journey, and there are a lot of new concepts, but we, the [Cult of Coders
 > Just [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide). 
 
 
+## Install it quickly
+
+```bash
+curl https://install.meteor.com/ | sh
+git clone https://github.com/kaviarjs/boilerplate.git project
+npm start
+```
+
 ## Time of choice
 
-- The blue pill: [Backend]('./docs/backend')
-- The red pill: [Frontend]('./docs/frontend')
+- The blue pill: [Backend](loading-the-api.html)
+- The red pill: [Frontend](frontend-basics.html)
 
 
 > Have an amazing journey!

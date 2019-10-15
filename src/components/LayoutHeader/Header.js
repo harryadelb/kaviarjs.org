@@ -14,7 +14,7 @@ import {version} from 'site-constants';
 import ExternalLinkSvg from 'templates/components/ExternalLinkSvg';
 import DocSearch from './DocSearch';
 
-import logoSvg from 'icons/logo.svg';
+import logoSvg from 'icons/logo-white.svg';
 
 const Header = ({location}: {location: Location}) => (
   <header
@@ -63,31 +63,6 @@ const Header = ({location}: {location: Location}) => (
           }}
           to="/">
           <img src={logoSvg} alt="" height="20" />
-          <span
-            css={{
-              color: 'inherit',
-              marginLeft: 10,
-              fontWeight: 700,
-              fontSize: 20,
-              lineHeight: '20px',
-              [media.lessThan('large')]: {
-                fontSize: 16,
-                marginTop: 1,
-              },
-              [media.lessThan('small')]: {
-                // Visually hidden
-                position: 'absolute',
-                overflow: 'hidden',
-                clip: 'rect(0 0 0 0)',
-                height: 1,
-                width: 1,
-                margin: -1,
-                padding: 0,
-                border: 0,
-              },
-            }}>
-            React
-          </span>
         </Link>
 
         <nav
@@ -125,21 +100,21 @@ const Header = ({location}: {location: Location}) => (
             title="Docs"
             to="/docs/getting-started.html"
           />
-          <HeaderLink
+          {/* <HeaderLink
             isActive={location.pathname.includes('/tutorial/')}
             title="Tutorial"
             to="/tutorial/tutorial.html"
-          />
+          /> */}
           {/* <HeaderLink
             isActive={location.pathname.includes('/blog')}
             title="Blog"
             to="/blog/"
           /> */}
-          <HeaderLink
+          {/* <HeaderLink
             isActive={location.pathname.includes('/community/')}
             title="Community"
             to="/community/support.html"
-          />
+          /> */}
         </nav>
 
         <DocSearch />

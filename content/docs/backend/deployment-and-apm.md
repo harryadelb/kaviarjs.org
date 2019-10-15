@@ -76,7 +76,7 @@ bash
 Install the node version
 
 ```
-nvm i 8.11.4
+nvm i 8.15.1
 npm i -g pm2
 ```
 
