@@ -1,10 +1,10 @@
 {
-  "name": "react-website",
-  "description": "React website",
+  "name": "kaviar-website",
+  "description": "Kaviar website",
   "version": "0.0.1",
   "private": true,
   "bugs": {
-    "url": "https://github.com/reactjs/reactjs.org"
+    "url": "https://github.com/kaviarjs/kaviarjs.org"
   },
   "dependencies": {
     "babel-eslint": "^8.0.1",

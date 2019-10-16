@@ -15,9 +15,7 @@ Here you can explore the web of knowledge and the key technologies used in diffe
 
 ### Boilerplates {#boilerplates}
 
-- Kaviar Pure Backend
-- Kaviar Fullstack
-- Kaviar Fullstack & Accounts
+- [Kaviar Fullstack](https://github.com/kaviarjs/boilerplate)
 
 ### Basic Knowledge {#basics}
 

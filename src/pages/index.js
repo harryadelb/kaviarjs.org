@@ -136,6 +136,11 @@ class Home extends Component {
                       },
                     }}>
                     Orchestrating the modern-web with GraphQL & React
+                    <br />
+                    <strong>
+                      by{' '}
+                      <a href="https://www.cultofcoders.com">cultofcoders.com</a>
+                    </strong>
                   </p>
                   <Flex
                     valign="center"

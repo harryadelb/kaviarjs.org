@@ -8,10 +8,10 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'React: A JavaScript library for building user interfaces',
-    siteUrl: 'https://reactjs.org',
-    rssFeedTitle: 'React',
-    rssFeedDescription: 'A JavaScript library for building user interfaces',
+    title: 'Kaviar: The way to build React & GraphQL apps',
+    siteUrl: 'https://www.kaviarjs.org',
+    rssFeedTitle: 'Kaviar',
+    rssFeedDescription: 'The way to build React & GraphQL apps',
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',

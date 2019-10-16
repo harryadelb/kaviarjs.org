@@ -8,7 +8,7 @@ redirect_from:
   - "docs/index.html"
 ---
 
-**Kaviar** is a framework of predefined modern JavaScript technologies (Meteor, Apollo, React) that allow you to build Web & Mobile apps rapidly. Our main focuses are: Code Scalability, Developer Experience, Code Elegance.
+**KAVIAR** is a a way of coding and orchestrating your logic using Apollo & React.
 
 ---
 
@@ -22,8 +22,7 @@ It's a journey, and there are a lot of new concepts, but we, the [Cult of Coders
 
 ## What do I need before I begin?
 
-> Just [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide). 
-
+Just basic notions of [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 
 ## Install it quickly
 
@@ -33,10 +32,6 @@ git clone https://github.com/kaviarjs/boilerplate.git project
 npm start
 ```
 
-## Time of choice
+Then you can already explore your API here:
+http://localhost:3000
 
-- The blue pill: [Backend](loading-the-api.html)
-- The red pill: [Frontend](frontend-basics.html)
-
-
-> Have an amazing journey!

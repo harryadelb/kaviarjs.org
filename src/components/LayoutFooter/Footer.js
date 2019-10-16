@@ -75,43 +75,31 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
           <FooterNav layoutHasSidebar={layoutHasSidebar}>
             <MetaTitle onDark={true}>Channels</MetaTitle>
             <ExternalFooterLink
-              href="https://github.com/facebook/react"
+              href="https://github.com/kaviarjs/kaviarjs.org"
               target="_blank"
               rel="noopener">
               GitHub
             </ExternalFooterLink>
             <ExternalFooterLink
-              href="https://stackoverflow.com/questions/tagged/reactjs"
+              href="https://stackoverflow.com/questions/tagged/kaviarjs"
               target="_blank"
               rel="noopener">
               Stack Overflow
             </ExternalFooterLink>
             <ExternalFooterLink
-              href="https://discuss.reactjs.org"
+              href="https://forums.meteor.com"
               target="_blank"
               rel="noopener">
               Discussion Forum
             </ExternalFooterLink>
             <ExternalFooterLink
-              href="https://discord.gg/0ZcbPKXt5bZjGY5n"
+              href="https://discord.gg/XUywXZ"
               target="_blank"
               rel="noopener">
-              Reactiflux Chat
+              Kaviar Chat
             </ExternalFooterLink>
             <ExternalFooterLink
-              href="https://dev.to/t/react"
-              target="_blank"
-              rel="noopener">
-              DEV Community
-            </ExternalFooterLink>
-            <ExternalFooterLink
-              href="https://www.facebook.com/react"
-              target="_blank"
-              rel="noopener">
-              Facebook
-            </ExternalFooterLink>
-            <ExternalFooterLink
-              href="https://twitter.com/reactjs"
+              href="https://twitter.com/cultofcoders"
               target="_blank"
               rel="noopener">
               Twitter
