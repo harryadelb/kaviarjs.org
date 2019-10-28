@@ -106,28 +106,8 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
             </ExternalFooterLink>
           </FooterNav>
           <FooterNav layoutHasSidebar={layoutHasSidebar}>
-            <MetaTitle onDark={true}>Community</MetaTitle>
-            {sectionListCommunity.map(section => (
-              <FooterLink
-                to={`/community/${section.items[0].id}.html`}
-                key={section.title}>
-                {section.title}
-              </FooterLink>
-            ))}
-          </FooterNav>
-          <FooterNav layoutHasSidebar={layoutHasSidebar}>
             <MetaTitle onDark={true}>More</MetaTitle>
             <FooterLink to="/tutorial/tutorial.html">Tutorial</FooterLink>
-            <FooterLink to="/blog/">Blog</FooterLink>
-            <FooterLink to="/acknowledgements.html">
-              Acknowledgements
-            </FooterLink>
-            <ExternalFooterLink
-              href="https://facebook.github.io/react-native/"
-              target="_blank"
-              rel="noopener">
-              React Native
-            </ExternalFooterLink>
           </FooterNav>
         </div>
         <section
@@ -150,24 +130,36 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
             },
           }}>
           <a
-            href="https://code.facebook.com/projects/"
+            href="https://www.cultofcoders.com/portfolio"
             target="_blank"
             rel="noopener">
-            <img
-              alt="Facebook Open Source"
+            {/* <img
+              
+              
+              src={ossLogoPng}
+            /> */}
+            <div
               css={{
                 maxWidth: 160,
                 height: 'auto',
-              }}
-              src={ossLogoPng}
-            />
+              }}>
+              <svg
+                viewBox="0 0 160 43"
+                width="150"
+                height="40"
+                fill="#ea6032"
+              >
+                <path d="M10 11v21a1 1 0 0 0 1 1h30a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h39a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H11a1 1 0 0 0-1 1zm83-9v39a2 2 0 0 1-2 2H52a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v30a1 1 0 0 0 1 1h21a1 1 0 0 0 1-1V2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2zm50 33v6a2 2 0 0 1-2 2h-39a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v30a1 1 0 0 0 1 1h30a2 2 0 0 1 2 2z"></path>
+                <path d="M160 2v39a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2V11a1 1 0 0 0-1-1h-30a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h39a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
           </a>
           <p
             css={{
               color: colors.subtleOnDark,
               paddingTop: 15,
             }}>
-            {`Copyright © ${new Date().getFullYear()} Facebook Inc.`}
+            {`Copyright © ${new Date().getFullYear()} Cult Of Coders Inc.`}
           </p>
         </section>
       </div>
